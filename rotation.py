@@ -89,8 +89,9 @@ def annotate(name, img, rotated, angle, rotate_bbox, debug):
             new_width = np.min([new_width, 2 * (1 - new_center[0]), 2 * new_center[0]])
             new_height = np.min([new_height, 2 * (1 - new_center[1]), 2 * new_center[1]])
             _draw(rotated, [new_center[0], new_center[1], new_width, new_height])
-            cv2.imshow('r', rotated)
-            cv2.waitKey(0)
+            if debug:
+                cv2.imshow('r', rotated)
+                cv2.waitKey(0)
             f.write(f'{cl} {new_center[0]} {new_center[1]} {new_width} {new_height}')
 
 
