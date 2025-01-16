@@ -1,4 +1,4 @@
-# augment-it
+# augmentation
 
 Twice the dataset, _same_ the time for annotation!
 
@@ -38,8 +38,4 @@ change_brightness_contrast(file_list, min_alpha=0.5, max_alpha=1.5, min_beta=-60
 + `change_brightness_contrast` will save the output files in the directory "br_and_con/" and add "_bc" to all file names
 
 #
-#
-
-_Leave the boring stuff to the machines_
-
-  
+#  
